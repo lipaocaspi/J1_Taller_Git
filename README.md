@@ -35,17 +35,17 @@
    * Muestra las fechas de los commits de forma relativa.
 
      ```
-     git config --global alias.graphDetail "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all"
+     git config --global alias.graphDetail "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) %C(bold green) (%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)-%an%C(reset) %C(bold yellow)%d%C(reset)' --all"
      ```
 
      * **--graph** : muestra una representación gráfica del historial de commits con líneas que indican bifurcaciones y fusiones.
      * **--abbrev-commit** : muestra solo los primeros caracteres del hash del commit.
      * **--decorate** : muestra los nombres de las ramas y las etiquetas junto a los commits.
-     * **--format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)'** : define el formato de la salida del log, especificando cómo se mostrará cada commit :
+     * **--format=format:'%C(bold red)%h%C(reset) %C(bold green) (%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)-%an%C(reset) %C(bold yellow)%d%C(reset)'** : define el formato de la salida del log, especificando cómo se mostrará cada commit :
        * *%C(bold red)%h%C(reset)* --> muestra el hash abreviado del commit en rojo y negrita.
        * *%C(bold green) (%ar)%C(reset)* --> muestra la fecha relativa del commit en verde y negrita.
        * *%C(white)%s%C(reset)* --> muestra el mensaje del commit en blanco.
-       * *%C(dim white)-%an%C(reset)* --> muestra el autor del commit en blanco claro.
+       * *%C(dim white)%an%C(reset)* --> muestra el autor del commit en blanco claro.
        * *%C(bold yellow)%d%C(reset)* --> muestra las referencias (ramas o tags) en amarillo y negrita.
      * **--all** : muestra el registro de todas las ramas.
 
@@ -73,5 +73,16 @@
    ![](https://raw.githubusercontent.com/lipaocaspi/J1_Taller_Git/main/resultadoEj05.png)
 
    ```
-   
+   git config --global alias.graphDetails "log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(red)%d\%C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
    ```
+   
+   * **--graph** : muestra una representación gráfica del historial de commits con líneas que indican bifurcaciones y fusiones.
+   * **--abbrev-commit** : muestra solo los primeros caracteres del hash del commit.
+   * **--decorate** : muestra los nombres de las ramas y las etiquetas junto a los commits.
+   * **--format=format:'%C(yellow)%h%C(reset)%C(red)%d\%C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)'** : define el formato de la salida del log, especificando cómo se mostrará cada commit :
+     * *%C(yellow)%h%C(reset)* --> muestra el hash abreviado del commit en amarillo.
+     * *%C(red)%d\%C(reset)* --> muestra las referencias (ramas o tags) en rojo, con un slash invertido al final.
+     * *%C(white)%s%C(reset)* --> muestra el mensaje del commit en blanco.
+     * *%C(blue)\ [%an]%C(reset)* --> muestra el autor del commit en azul, con un slash invertido antes y encerrado en llaves.
+   
+   * **--all** : muestra el registro de todas las ramas.
