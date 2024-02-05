@@ -35,7 +35,7 @@
    * Muestra las fechas de los commits de forma relativa.
 
      ```
-     git config --global alias.lsG5 "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all"
+     git config --global alias.graphDetail "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all"
      ```
 
      
@@ -62,3 +62,7 @@
 5. Imagina que estás trabajando en un proyecto Git colaborativo con múltiples colaboradores y ramas. Tu tarea es utilizar el comando git log con opciones específicas para personalizar la salida del historial del commits y resaltar información clave. El resultado de la ejecución del comando se debe ver como el ejemplo siguiente:
 
    ![](https://raw.githubusercontent.com/lipaocaspi/J1_Taller_Git/main/resultadoEj05.png)
+
+   ```
+   
+   ```
