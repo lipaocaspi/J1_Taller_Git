@@ -38,7 +38,16 @@
      git config --global alias.graphDetail "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)' --all"
      ```
 
-     
+     * **--graph** : muestra una representación gráfica del historial de commits con líneas que indican bifurcaciones y fusiones.
+     * **--abbrev-commit** : muestra solo los primeros caracteres del hash del commit.
+     * **--decorate** : muestra los nombres de las ramas y las etiquetas junto a los commits.
+     * **--format=format:'%C(bold red)%h%C(reset) - %C(bold green) (%ar)%C(reset) - %C(white)%s%C(reset) - %C(dim white)-%an%C(reset) - %C(bold yellow)%d%C(reset)'** : define el formato de la salida del log, especificando cómo se mostrará cada commit :
+       * *%C(bold red)%h%C(reset)* --> muestra el hash abreviado del commit en rojo y negrita.
+       * *%C(bold green) (%ar)%C(reset)* --> muestra la fecha relativa del commit en verde y negrita.
+       * *%C(white)%s%C(reset)* --> muestra el mensaje del commit en blanco.
+       * *%C(dim white)-%an%C(reset)* --> muestra el autor del commit en blanco claro.
+       * *%C(bold yellow)%d%C(reset)* --> muestra las referencias (ramas o tags) en amarillo y negrita.
+     * **--all** : muestra el registro de todas las ramas.
 
 3. Estás trabajando frecuentemente con el comando git log -1 HEAD para obtener detalles sobre el último commit en la rama actual. Sin embargo, encuentras que escribir este comando completo es un poco tedioso. Quieres simplificarlo creando un alias personalizado.
 
