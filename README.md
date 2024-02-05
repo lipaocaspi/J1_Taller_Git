@@ -36,7 +36,7 @@ git config --global alias.lastFive "log --all --decorate --oneline --graph -n 5"
 
 * Muestra las fechas de los commits de forma relativa.
 
-  **Solución : **
+  **Solución :**
   
   ```
   git config --global alias.graphDetail "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) %C(bold green) (%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)-%an%C(reset) %C(bold yellow)%d%C(reset)' --all"
@@ -64,7 +64,7 @@ git config --global alias.lastFive "log --all --decorate --oneline --graph -n 5"
 
 ​	Tu tarea es utilizar el comando git config para crear un alias llamado last que represente el comando git log -1 HEAD.
 
-​	**Solución : **
+​	**Solución :**
 
 ```
 git config --global alias.last "log -1 HEAD"
@@ -78,7 +78,7 @@ git config --global alias.last "log -1 HEAD"
 
 4. Imagina que deseas simplificar el proceso de editar la configuración global de Git. Tu tarea es utilizar el comando git config para crear un alias que te permita abrir facilmente la configuración global de tu editor de texto preferido. Ejecuta el comando para crear un alias llamado ec que cumpla con la especificación dada.
 
-   **Solución : **
+   **Solución :**
 
 ```
 
@@ -90,7 +90,7 @@ git config --global alias.last "log -1 HEAD"
 
 ![](https://raw.githubusercontent.com/lipaocaspi/J1_Taller_Git/main/resultadoEj05.png)
 
-**Solución : **
+**Solución :**
 
 ```
 git config --global alias.graphDetails "log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(red)%d\%C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
