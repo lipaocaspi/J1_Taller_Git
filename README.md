@@ -61,11 +61,4 @@
 
 5. Imagina que estás trabajando en un proyecto Git colaborativo con múltiples colaboradores y ramas. Tu tarea es utilizar el comando git log con opciones específicas para personalizar la salida del historial del commits y resaltar información clave. El resultado de la ejecución del comando se debe ver como el ejemplo siguiente:
 
-   ![](https://raw.githubusercontent.com/lipaocaspi/J1_Taller_Git/main/resultadoEj05.png)
-
-   ```
-   
-   ```
-
-   
-
+   ![](C:\Users\user\Documents\J1_Liliana\J1_Taller_Git\resultadoEj06.png)
