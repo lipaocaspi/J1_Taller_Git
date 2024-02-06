@@ -81,7 +81,7 @@ git config --global alias.last "log -1 HEAD"
    **Solución :**
 
 ```
-
+git config --global alias.ec "config --global -e"
 ```
 
 
