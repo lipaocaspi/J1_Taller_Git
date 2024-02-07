@@ -8,6 +8,10 @@
 git config --global alias.lastFive "log --all --decorate --oneline --graph -n 5"
 ```
 
+* **git config --global** : configura opciones de Git. **--global** indica que el cambio se aplicará a nivel global.
+
+* **alias.lastFive** : establece un alias llamado **lastFive** en la configuración de Git.
+
 * **--all** : muestra el registro de todas las ramas.
 
 * **--decorate** : muestra los nombres de las ramas y las etiquetas junto a los commits.
@@ -42,6 +46,10 @@ git config --global alias.lastFive "log --all --decorate --oneline --graph -n 5"
   git config --global alias.graphDetail "log --graph --abbrev-commit --decorate --format=format:'%C(bold red)%h%C(reset) %C(bold green) (%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)-%an%C(reset) %C(bold yellow)%d%C(reset)' --all"
   ```
   
+  * **git config --global** : configura opciones de Git. **--global** indica que el cambio se aplicará a nivel global.
+  
+  * **alias.graphDetails** : establece un alias llamado **graphDetail** en la configuración de Git.
+  
   * **--graph** : muestra una representación gráfica del historial de commits con líneas que indican bifurcaciones y fusiones.
   
   * **--abbrev-commit** : muestra solo los primeros caracteres del hash del commit.
@@ -70,13 +78,17 @@ git config --global alias.lastFive "log --all --decorate --oneline --graph -n 5"
 git config --global alias.last "log -1 HEAD"
 ```
 
+* **git config --global** : configura opciones de Git. **--global** indica que el cambio se aplicará a nivel global.
+
+* **alias.last** : establece un alias llamado **last** en la configuración de Git.
+
 * **-1** : limita la salida a un solo commit (el último).
 
 * **HEAD** : especifíca la rama actual.
 
   
 
-4. Imagina que deseas simplificar el proceso de editar la configuración global de Git. Tu tarea es utilizar el comando git config para crear un alias que te permita abrir facilmente la configuración global de tu editor de texto preferido. Ejecuta el comando para crear un alias llamado ec que cumpla con la especificación dada.
+4. Imagina que deseas simplificar el proceso de editar la configuración global de Git. Tu tarea es utilizar el comando git config para crear un alias que te permita abrir facilmente la configuración global en tu editor de texto preferido. Ejecuta el comando para crear un alias llamado ec que cumpla con la especificación dada.
 
    **Solución :**
 
@@ -84,7 +96,13 @@ git config --global alias.last "log -1 HEAD"
 git config --global alias.ec "config --global -e"
 ```
 
+* **git config --global** : configura opciones de Git. **--global** indica que el cambio se aplicará a nivel global.
 
+* **alias.ec** : establece un alias llamado **ec** en la configuración de Git.
+
+* **-e** : indica que se quiere abrir el archivo de configuración en un editor de texto.
+
+  
 
 5. Imagina que estás trabajando en un proyecto Git colaborativo con múltiples colaboradores y ramas. Tu tarea es utilizar el comando git log con opciones específicas para personalizar la salida del historial del commits y resaltar información clave. El resultado de la ejecución del comando se debe ver como el ejemplo siguiente:
 
@@ -96,6 +114,8 @@ git config --global alias.ec "config --global -e"
 git config --global alias.graphDetails "log --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(red)%d\%C(reset) %C(white)%s%C(reset)%C(blue)\ [%an]%C(reset)' --all"
 ```
 
+* **git config --global** : configura opciones de Git. **--global** indica que el cambio se aplicará a nivel global.
+* **alias.graphDetails** : establece un alias llamado **graphDetails** en la configuración de Git.
 * **--graph** : muestra una representación gráfica del historial de commits con líneas que indican bifurcaciones y fusiones.
 * **--abbrev-commit** : muestra solo los primeros caracteres del hash del commit.
 * **--decorate** : muestra los nombres de las ramas y las etiquetas junto a los commits.
